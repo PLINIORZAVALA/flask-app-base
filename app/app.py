@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hola_mundo():
-    return '¡Hola, mundo!'
+    return render_template('index.html')
 
 @app.route('/about')
 def acerca_de():
